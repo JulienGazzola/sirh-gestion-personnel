@@ -1,6 +1,7 @@
 <%@page import="java.util.List"%>
 <%@page import="dev.sgp.entite.Collaborateur"%>
-<%@ page language="java" pageEncoding="UTF-8"%>
+<%@page language="java" pageEncoding="UTF-8"%> 
+<%@page isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +24,7 @@
 					<label for="nom">Nom : </label>
 				</div>
 				<div class="col-4">
-					<input type="text" required id="nom" name="nom">
+					<input type="text" value="${nom}" required id="nom" name="nom">
 				</div>
 			</div>
 			<div class="row">
@@ -31,7 +32,7 @@
 					<label for="prenom">Prénom : </label>
 				</div>
 				<div class="col-4">
-					<input type="text" required id="prenom" name="prenom">
+					<input type="text" value="${prenom}" required id="prenom" name="prenom">
 				</div>
 			</div>
 			<div class="row">
@@ -48,7 +49,7 @@
 					<label for="adresse">Adresse : </label>
 				</div>
 				<div class="col-4">
-					<input type="text" id="adresse" required name="adresse">
+					<input type="text" value="${adresse}" id="adresse" required name="adresse">
 				</div>
 			</div>
 			<div class="row">
@@ -56,7 +57,7 @@
 					<label for="secuNumber">Numéro de sécurité sociale : </label>
 				</div>
 				<div class="col-4">
-					<input type="text" required id="secuNumber" name="secuNumber"
+					<input type="text" value="${secuNumber}" required id="secuNumber" name="secuNumber"
 						maxlength="15">
 				</div>
 			</div>

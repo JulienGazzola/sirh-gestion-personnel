@@ -20,7 +20,12 @@ public class Collaborateur {
 	private String emailPro;
 	private String photo;
 	private ZonedDateTime dateHeureCreation;
-	
+	private Departement departement;
+	private String civilite;
+	private String telephone;
+	private String bic;
+	private String iban;
+
 	public Collaborateur(){
 		
 	}
@@ -146,6 +151,76 @@ public class Collaborateur {
 	 */
 	public void setDateHeureCreation(ZonedDateTime dateHeureCreation) {
 		this.dateHeureCreation = dateHeureCreation;
+	}
+
+	/**
+	 * @return the departement
+	 */
+	public Departement getDepartement() {
+		return departement;
+	}
+
+	/**
+	 * @param departement the departement to set
+	 */
+	public void setDepartement(Departement departement) {
+		this.departement = departement;
+	}
+
+	/**
+	 * @return the civilite
+	 */
+	public String getCivilite() {
+		return civilite;
+	}
+
+	/**
+	 * @param civilite the civilite to set
+	 */
+	public void setCivilite(String civilite) {
+		this.civilite = civilite;
+	}
+
+	/**
+	 * @return the telephone
+	 */
+	public String getTelephone() {
+		return telephone;
+	}
+
+	/**
+	 * @param telephone the telephone to set
+	 */
+	public void setTelephone(String telephone) {
+		this.telephone = telephone;
+	}
+
+	/**
+	 * @return the bic
+	 */
+	public String getBic() {
+		return bic;
+	}
+
+	/**
+	 * @param bic the bic to set
+	 */
+	public void setBic(String bic) {
+		this.bic = bic;
+	}
+
+	/**
+	 * @return the iban
+	 */
+	public String getIban() {
+		return iban;
+	}
+
+	/**
+	 * @param iban the iban to set
+	 */
+	public void setIban(String iban) {
+		this.iban = iban;
 	}
 	
 	
